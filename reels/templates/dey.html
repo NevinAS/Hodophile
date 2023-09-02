@@ -1,0 +1,21 @@
+{% extends 'theme.html'%}
+ {% block content %}
+<h1>Empuraan</h1>
+<div class ="container">
+  <div class="row">
+  {% for y in x %}
+
+<div class="card" style="width: 18rem;">
+  <img src="{{y.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{y.name}}</h5>
+    <p class="card-text">{{y.price}}</p>
+    <p class="card-text">{{y.stock}}</p>
+    <a href="https://restaurant-guru.in/Paragon-Restaurant-Trivandrum-Thiruvananthapuram" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    {% endfor %}
+  </div>
+
+  </div>
+  {% endblock %}
